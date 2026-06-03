@@ -43,6 +43,7 @@ export const site = {
   nav: [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
+    { label: "Products", href: "/products" },
     { label: "About Us", href: "/about" },
     { label: "Gallery", href: "/gallery" },
     { label: "Blog", href: "/blog" },
@@ -159,6 +160,10 @@ export const reviews = [
 ];
 
 export const faqs = [
+  {
+    question: "Do you sell electrical products too?",
+    answer: "Yes. Moe The Electrician now offers a quote-based catalog for circuit breakers, cables, switches, sockets, LED lighting, panels, contactors, solar accessories, tools, and installation accessories."
+  },
   {
     question: "Do you offer emergency electrician services?",
     answer: "Yes. Moe The Electrician handles urgent electrical repairs, power issues, breaker problems, unsafe wiring, and emergency service calls across Beirut, Mount Lebanon, Jounieh, Baabda, Aley, and nearby areas."

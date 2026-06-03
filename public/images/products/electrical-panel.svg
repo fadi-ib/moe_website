@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-labelledby="title">
+  <title id="title">Electrical panel product illustration</title>
+  <rect width="720" height="540" fill="#eef4f8"/>
+  <rect x="210" y="72" width="300" height="396" rx="24" fill="#ffffff" stroke="#0b1f3a" stroke-width="12"/>
+  <rect x="250" y="118" width="220" height="56" rx="10" fill="#ffd21f"/>
+  <g fill="#dbe6ee" stroke="#0b1f3a" stroke-width="8">
+    <rect x="250" y="214" width="86" height="58" rx="10"/>
+    <rect x="384" y="214" width="86" height="58" rx="10"/>
+    <rect x="250" y="304" width="86" height="58" rx="10"/>
+    <rect x="384" y="304" width="86" height="58" rx="10"/>
+  </g>
+  <circle cx="454" cy="410" r="12" fill="#ffd21f"/>
+  <path d="M250 410h154" stroke="#778899" stroke-width="14" stroke-linecap="round"/>
+</svg>

@@ -1,4 +1,6 @@
 import { galleryProjects, reviews } from "@/lib/site";
+import { productCategories, products } from "@/lib/products";
+import type { Product } from "@/lib/products";
 
 export type QuoteStatus = "New" | "Contacted" | "Completed";
 
@@ -68,3 +70,9 @@ export const defaultReviews: AdminReview[] = reviews.map((review, index) => ({
   id: `RV-${index + 1}`,
   ...review
 }));
+
+export const defaultProducts: Product[] = products;
+
+export const defaultProductCategories = productCategories.map((category) => category.name);
+
+export const defaultProductBrands = Array.from(new Set(products.map((product) => product.brand))).sort();

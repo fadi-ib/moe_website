@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-labelledby="title">
+  <title id="title">Electrical tools product illustration</title>
+  <rect width="720" height="540" fill="#f2f7fa"/>
+  <path d="M210 162l124 124-78 78L132 240z" fill="#ffffff" stroke="#0b1f3a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M306 314l170 170" stroke="#0b1f3a" stroke-width="34" stroke-linecap="round"/>
+  <path d="M370 190l56-56 160 160-56 56z" fill="#ffd21f" stroke="#0b1f3a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M418 238l-86 86" stroke="#0b1f3a" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="480" cy="438" r="24" fill="#ffd21f" stroke="#0b1f3a" stroke-width="10"/>
+</svg>

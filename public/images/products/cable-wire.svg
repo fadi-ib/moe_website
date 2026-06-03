@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-labelledby="title">
+  <title id="title">Electrical cable product illustration</title>
+  <rect width="720" height="540" fill="#f2f7fa"/>
+  <path d="M158 300c80-130 234-155 337-86 67 45 70 138 5 185-84 62-232 39-288-31-38-48-7-109 67-125 68-15 151 8 188 52" fill="none" stroke="#0b1f3a" stroke-width="38" stroke-linecap="round"/>
+  <path d="M158 300c80-130 234-155 337-86 67 45 70 138 5 185-84 62-232 39-288-31-38-48-7-109 67-125 68-15 151 8 188 52" fill="none" stroke="#ffd21f" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="521" cy="410" r="42" fill="#ffffff" stroke="#0b1f3a" stroke-width="10"/>
+  <circle cx="521" cy="410" r="15" fill="#c67f22"/>
+  <rect x="108" y="184" width="90" height="68" rx="16" fill="#ffffff" stroke="#0b1f3a" stroke-width="10"/>
+</svg>

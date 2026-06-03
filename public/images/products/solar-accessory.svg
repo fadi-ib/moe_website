@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-labelledby="title">
+  <title id="title">Solar accessory product illustration</title>
+  <rect width="720" height="540" fill="#eef4f8"/>
+  <rect x="152" y="144" width="264" height="196" rx="16" fill="#14365f" stroke="#0b1f3a" stroke-width="12"/>
+  <path d="M152 210h264M238 144v196M326 144v196" stroke="#8fb0cc" stroke-width="8"/>
+  <circle cx="486" cy="278" r="58" fill="#ffd21f" stroke="#0b1f3a" stroke-width="12"/>
+  <path d="M486 188v-42M486 410v-42M396 278h-42M618 278h-42M422 214l-30-30M550 342l30 30M550 214l30-30M422 342l-30 30" stroke="#ffd21f" stroke-width="16" stroke-linecap="round"/>
+  <path d="M414 384c42 34 92 34 134 0" fill="none" stroke="#0b1f3a" stroke-width="16" stroke-linecap="round"/>
+</svg>

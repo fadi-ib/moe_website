@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-labelledby="title">
+  <title id="title">LED lighting product illustration</title>
+  <rect width="720" height="540" fill="#f2f7fa"/>
+  <rect x="176" y="124" width="368" height="236" rx="22" fill="#ffffff" stroke="#0b1f3a" stroke-width="12"/>
+  <rect x="214" y="164" width="292" height="156" rx="14" fill="#fff8bf"/>
+  <path d="M236 392h248" stroke="#0b1f3a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M274 428h172" stroke="#ffd21f" stroke-width="18" stroke-linecap="round"/>
+  <path d="M190 84l-34-34M530 84l34-34M360 76V30" stroke="#ffd21f" stroke-width="18" stroke-linecap="round"/>
+</svg>

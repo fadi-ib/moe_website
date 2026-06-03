@@ -1,16 +1,19 @@
-import { ArrowRight, BadgeCheck, MessageCircle, Phone, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, BadgeCheck, MessageCircle, Phone, ShoppingBasket, ShieldCheck, Zap } from "lucide-react";
 import Link from "next/link";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ContactCTA } from "@/components/ContactCTA";
 import { FAQSection } from "@/components/FAQSection";
 import { GalleryCard } from "@/components/GalleryCard";
 import { MotionReveal } from "@/components/MotionReveal";
+import { ProductCard } from "@/components/products/ProductCard";
+import { ProductCategoryGrid } from "@/components/products/ProductCategoryGrid";
 import { QuoteRequestForm } from "@/components/QuoteRequestForm";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TrustProcessSection } from "@/components/TrustProcessSection";
 import { businessStats, galleryProjects, servicesPreview, site, trustBadges, whyChooseUs } from "@/lib/site";
+import { featuredProducts } from "@/lib/products";
 
 export default function HomePage() {
   return (
@@ -32,16 +35,20 @@ export default function HomePage() {
               <Zap className="h-4 w-4" aria-hidden="true" />
               Local electrician serving Lebanon
             </div>
-            <h1 className="mt-6 max-w-4xl text-5xl font-black tracking-tight md:text-7xl">Need an Electrician Today?</h1>
-            <p className="mt-6 max-w-2xl text-xl leading-9 text-white/75">Fast, safe, and professional electrical services across Lebanon.</p>
+            <h1 className="mt-6 max-w-4xl text-5xl font-black tracking-tight md:text-7xl">Moe The Electrician & Electrical Supplies</h1>
+            <p className="mt-6 max-w-2xl text-xl leading-9 text-white/75">Fast electrical services plus quote-based electrical items for homes, shops, panels, lighting, and installations across Lebanon.</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href={site.phoneHref} icon={Phone}>
-                Call Now
+              <ButtonLink href="/quote" icon={Phone}>
+                Request Electrical Service
               </ButtonLink>
-              <ButtonLink href="/quote" icon={ArrowRight} variant="secondary">
-                Get Free Quote
+              <ButtonLink href="/products" icon={ShoppingBasket} variant="secondary">
+                Shop Electrical Items
               </ButtonLink>
             </div>
+            <Link href={site.whatsapp} className="mt-4 inline-flex items-center gap-2 text-sm font-black text-electric transition hover:text-white">
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              WhatsApp Moe for urgent service or product pricing
+            </Link>
             <div className="mt-8 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
               {trustBadges.map((item) => (
                 <div key={item} className="flex items-center gap-2 rounded-md border border-white/10 bg-white/10 p-3 text-sm font-bold text-white/80">
@@ -103,6 +110,46 @@ export default function HomePage() {
                 <ServiceCard {...service} href="/services" />
               </MotionReveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 px-4 py-20 md:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <MotionReveal>
+              <SectionHeading
+                eyebrow="Featured products"
+                title="Electrical supplies ready for quote requests."
+                description="Request prices for common breakers, cables, LED lighting, panels, and accessories, then confirm availability directly on WhatsApp."
+              />
+            </MotionReveal>
+            <ButtonLink href="/products" variant="ghost" icon={ArrowRight}>
+              View Product Catalog
+            </ButtonLink>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {featuredProducts.map((product, index) => (
+              <MotionReveal key={product.slug} delay={index * 0.04}>
+                <ProductCard product={product} />
+              </MotionReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-20 md:px-8">
+        <div className="mx-auto max-w-7xl">
+          <MotionReveal>
+            <SectionHeading
+              eyebrow="Product categories"
+              title="Shop by electrical need."
+              description="Browse organized categories for repairs, installations, panel upgrades, lighting projects, solar support, and job-site accessories."
+              align="center"
+            />
+          </MotionReveal>
+          <div className="mt-10">
+            <ProductCategoryGrid />
           </div>
         </div>
       </section>
