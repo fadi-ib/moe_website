@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, MessageCircle, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site";
 import { ButtonLink } from "@/components/ButtonLink";
@@ -66,8 +66,8 @@ export function Navbar() {
         </div>
 
         <div className="hidden lg:block">
-          <ButtonLink href={site.phoneHref} icon={Phone} className="min-h-11 px-4 py-2">
-            Call Now
+          <ButtonLink href={site.whatsapp} icon={MessageCircle} className="min-h-11 px-4 py-2">
+            WhatsApp
           </ButtonLink>
         </div>
 
@@ -95,8 +95,8 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <ButtonLink href={site.phoneHref} icon={Phone} className="mt-2 w-full">
-              Call Now
+            <ButtonLink href={site.whatsapp} icon={MessageCircle} className="mt-2 w-full">
+              WhatsApp Moe
             </ButtonLink>
           </div>
         </div>

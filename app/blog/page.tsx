@@ -16,12 +16,12 @@ export default function BlogPage() {
       <PageHero
         eyebrow="Electrical blog"
         title="Helpful electrical advice for local homeowners and businesses."
-        description="SEO-ready blog architecture with categories, reading time, and featured image placeholders for future articles."
+        description="Read practical guidance about electrical safety, repairs, generators, lighting, and solar-ready upgrades for homes and small businesses."
       />
       <section className="px-4 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-7xl">
           <MotionReveal>
-            <SectionHeading eyebrow="Articles" title="Electrical guides built for local search." description="Educational content helps visitors understand the problem and gives Google more local service context." align="center" />
+            <SectionHeading eyebrow="Articles" title="Electrical guides for safer decisions." description="Helpful articles for understanding common electrical problems, planning upgrades, and knowing when to call a professional." align="center" />
           </MotionReveal>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {blogPosts.map((post, index) => (

@@ -7,6 +7,7 @@ Modern hybrid electrical services and electrical products website built with Nex
 Moe The Electrician serves two connected customer needs:
 
 - Electrical services: emergency repairs, residential electrical work, commercial electrical work, panels, lighting, generators, wiring, and smart-home electrical support.
+- Solar electrical support: PV wiring, inverter connections, DC protection, solar accessories, and solar-ready installation help.
 - Electrical products catalog: quote-based electrical supplies with WhatsApp-first pricing and availability requests.
 
 The product catalog is not a full ecommerce checkout. Phase 1 is intentionally quote-based: customers browse products, add items to a quote basket, include quantities and notes, then send the request by WhatsApp.
@@ -15,6 +16,7 @@ The product catalog is not a full ecommerce checkout. Phase 1 is intentionally q
 
 - `/`: homepage with service and product CTAs, services preview, featured products, product categories, quote form, reviews, gallery preview, contact CTAs, FAQs, and trust/process content.
 - `/services`: electrical service overview.
+- `/solar`: solar electrical support overview with PV wiring, inverter, DC protection, and solar accessory CTAs.
 - `/products`: searchable and filterable electrical products catalog.
 - `/products/[slug]`: product detail pages with image, brand, category, specs, stock status, WhatsApp quote button, and related products.
 - `/products/category/[slug]`: product category pages for circuit breakers, cables and wires, switches and sockets, LED lighting, electrical panels, contactors and relays, solar accessories, and tools and accessories.
@@ -88,6 +90,8 @@ Product SEO targets terms including:
 - electrician and electrical store
 - circuit breakers Lebanon
 - LED lighting Lebanon
+- solar electrician Lebanon
+- solar accessories Lebanon
 
 ## Documentation
 
@@ -133,7 +137,7 @@ npm.cmd run start
 Current prepared release:
 
 - Version: `v1.1.0`
-- Title: `Electrical Product Catalog & Quote Basket`
+- Title: `Electrical Product Catalog, Solar Visibility & Quote Basket`
 
 ## Notes
 

@@ -5,6 +5,7 @@ const baseUrl = "https://moetheelectrician.com";
 const routes = [
   { path: "", changeFrequency: "weekly", priority: 1 },
   { path: "/services", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/solar", changeFrequency: "monthly", priority: 0.85 },
   { path: "/products", changeFrequency: "weekly", priority: 0.9 },
   { path: "/about", changeFrequency: "monthly", priority: 0.8 },
   { path: "/gallery", changeFrequency: "monthly", priority: 0.8 },

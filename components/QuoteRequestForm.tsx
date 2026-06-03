@@ -88,7 +88,7 @@ export function QuoteRequestForm() {
       setStatus("success");
     } catch {
       setStatus("error");
-      setError("The request could not be saved locally. Please call or send the details on WhatsApp.");
+      setError("The request could not be completed. Please call or send the details on WhatsApp.");
     }
   }
 
@@ -162,7 +162,7 @@ export function QuoteRequestForm() {
       {status === "success" ? (
         <div className="mt-5 flex gap-3 rounded-md border border-emerald-200 bg-emerald-50 p-4 text-sm font-bold text-emerald-800">
           <CheckCircle2 className="h-5 w-5 shrink-0" aria-hidden="true" />
-          Request saved locally. Moe can follow up from the admin quote list.
+          Request received. Moe can follow up with the right next step.
         </div>
       ) : null}
 

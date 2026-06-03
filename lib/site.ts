@@ -1,7 +1,9 @@
 import {
   BadgeCheck,
+  BatteryCharging,
   Bolt,
   Building2,
+  Cable,
   CircleDollarSign,
   Clock3,
   Cpu,
@@ -20,11 +22,12 @@ import {
   ShieldCheck,
   Sparkles,
   Star,
+  Sun,
   Wrench,
   Zap
 } from "lucide-react";
 
-const whatsappMessage = "Hello Moe, I need an electrician for:\n- Repair\n- Installation\n- Generator\n- Panel Upgrade\n\nPlease contact me.";
+const whatsappMessage = "Hello Moe, I need help with:\n- Electrical Repair\n- Installation\n- Generator\n- Panel Upgrade\n- Solar\n\nPlease contact me.";
 
 export const site = {
   name: "Moe The Electrician",
@@ -43,6 +46,7 @@ export const site = {
   nav: [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
+    { label: "Solar", href: "/solar" },
     { label: "Products", href: "/products" },
     { label: "About Us", href: "/about" },
     { label: "Gallery", href: "/gallery" },
@@ -58,6 +62,7 @@ export const servicesPreview = [
   { title: "Lighting Systems", description: "Interior, exterior, recessed, security, and energy-efficient lighting designed for your space.", icon: Lightbulb },
   { title: "Circuit Breakers & Panels", description: "Panel repairs, breaker replacement, capacity upgrades, and safety improvements.", icon: PanelTop },
   { title: "Generator Installation", description: "Backup power planning and installation for homes and small businesses.", icon: Gauge },
+  { title: "Solar Solutions", description: "Solar-ready wiring, DC protection, inverter connections, and photovoltaic accessory support.", icon: Sun },
   { title: "Smart Home Solutions", description: "Connected switches, smart lighting, thermostats, and automation-ready electrical upgrades.", icon: Cpu }
 ];
 
@@ -68,8 +73,37 @@ export const services = [
   { title: "Panel Upgrades", description: "Service panel replacements, breaker upgrades, added capacity, subpanels, and code-conscious modernization.", icon: PanelTop },
   { title: "Lighting Installation", description: "Recessed lighting, landscape lighting, security lights, dimmers, fixture swaps, and lighting controls.", icon: Lightbulb },
   { title: "Generator Installation", description: "Generator setup, transfer switch installation, load planning, and dependable backup power solutions.", icon: Gauge },
+  { title: "Solar Electrical Support", description: "Solar-ready wiring, inverter connections, DC breakers, combiner protection, cable terminations, and PV accessory installation.", icon: Sun },
   { title: "Wiring & Rewiring", description: "New circuits, room additions, old wiring replacement, dedicated appliance lines, and clean cable management.", icon: Bolt },
   { title: "Smart Home Electrical Systems", description: "Smart switches, connected lighting, device wiring, automation controls, and future-ready electrical planning.", icon: Cpu }
+];
+
+export const solutionHighlights = [
+  {
+    title: "Electrical Services",
+    description: "Repairs, installations, panels, lighting, generators, and urgent electrical help for homes and businesses.",
+    href: "/services",
+    icon: Wrench
+  },
+  {
+    title: "Electrical Supplies",
+    description: "Quote-based breakers, cables, switches, sockets, lighting, panels, controls, tools, and installation accessories.",
+    href: "/products",
+    icon: Bolt
+  },
+  {
+    title: "Solar Solutions",
+    description: "Solar electrical support, DC protection, inverter wiring, PV accessories, and safer solar-ready installations.",
+    href: "/solar",
+    icon: Sun
+  }
+];
+
+export const solarSolutions = [
+  { title: "Solar System Wiring", description: "Clean solar cable routing, PV terminations, inverter feeds, and installation-ready electrical preparation.", icon: Cable },
+  { title: "Inverter Connections", description: "Safe inverter wiring, backup power integration, breaker sizing, and load-aware electrical connections.", icon: BatteryCharging },
+  { title: "DC Protection", description: "DC breakers, isolators, surge protection, combiner box support, and photovoltaic safety upgrades.", icon: ShieldCheck },
+  { title: "Solar Accessories", description: "MC4 connectors, PV cables, DC-rated breakers, labels, enclosures, and installation accessories supplied by quote.", icon: Sun }
 ];
 
 export const whyChooseUs = [
@@ -120,6 +154,7 @@ export const leadServices = [
   "Electrical Installation",
   "Lighting Installation",
   "Generator Installation",
+  "Solar Electrical Support",
   "Panel Upgrade",
   "Smart Home Wiring",
   "Commercial Electrical Work",
@@ -171,6 +206,10 @@ export const faqs = [
   {
     question: "Do you install generators?",
     answer: "Yes. Generator installation services include electrical connections, transfer switch planning, load checks, and safe setup for homes and small businesses."
+  },
+  {
+    question: "Do you provide solar electrical services?",
+    answer: "Yes. Solar support includes solar-ready wiring, inverter connections, DC protection, PV cable terminations, and solar accessory supply by quote."
   },
   {
     question: "How much does electrical repair cost?",

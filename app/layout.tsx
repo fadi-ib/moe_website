@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Moe The Electrician"
   },
   description:
-    "Moe The Electrician provides emergency electrician service, residential electrical services, commercial electrical services, generator installation, panel upgrades, and quote-based electrical supplies across Beirut, Mount Lebanon, Jounieh, Baabda, Aley, and surrounding areas.",
+    "Moe The Electrician provides emergency electrician service, residential electrical services, commercial electrical services, solar electrical support, generator installation, panel upgrades, and quote-based electrical supplies across Beirut, Mount Lebanon, Jounieh, Baabda, Aley, and surrounding areas.",
   keywords: [
     "Electrician in Lebanon",
     "electrical supplies Lebanon",
@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "electrician and electrical store",
     "circuit breakers Lebanon",
     "LED lighting Lebanon",
+    "solar electrician Lebanon",
+    "solar accessories Lebanon",
     "emergency electrician",
     "residential electrical services",
     "commercial electrical services",
@@ -48,13 +50,13 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "Moe The Electrician & Electrical Supplies | Lebanon",
     description:
-      "Fast emergency electrician service, electrical products, residential electrical services, commercial electrical services, generator installation, and panel upgrades across Lebanon.",
+      "Fast emergency electrician service, solar electrical support, electrical products, residential electrical services, commercial electrical services, generator installation, and panel upgrades across Lebanon.",
     images: [{ url: site.logo, width: 1200, height: 1200, alt: `${site.name} logo` }]
   },
   twitter: {
     card: "summary_large_image",
     title: "Moe The Electrician & Electrical Supplies | Lebanon",
-    description: "Emergency electrician, residential and commercial electrical services, quote-based electrical supplies, generator installation, and panel upgrades."
+    description: "Emergency electrician, solar electrical support, residential and commercial electrical services, quote-based electrical supplies, generator installation, and panel upgrades."
   },
   alternates: {
     canonical: "/"
@@ -89,6 +91,7 @@ export default function RootLayout({
       "Emergency Electrical Repairs",
       "Panel Upgrades",
       "Lighting Installation",
+      "Solar Electrical Support",
       "Generator Installation",
       "Smart Home Electrical Systems",
       "Electrical Product Supply",

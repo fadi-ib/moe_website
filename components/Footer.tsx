@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { site, servicesPreview } from "@/lib/site";
 
 export function Footer() {
@@ -21,7 +21,7 @@ export function Footer() {
             <span className="text-lg font-black">{site.name}</span>
           </Link>
           <p className="mt-5 max-w-sm leading-7 text-white/60">
-            Premium residential, commercial, and emergency electrical services with clean workmanship and responsive support.
+            Residential, commercial, emergency, solar, and electrical supply support with clean workmanship and responsive communication.
           </p>
           <div className="mt-5 flex gap-3">
             {site.socials.map(({ label, href, icon: Icon }) => (
@@ -69,6 +69,10 @@ export function Footer() {
             <Link href={site.emailHref} className="flex gap-3 transition hover:text-electric">
               <Mail className="mt-1 h-5 w-5 shrink-0" aria-hidden="true" />
               {site.email}
+            </Link>
+            <Link href={site.whatsapp} className="flex gap-3 transition hover:text-electric">
+              <MessageCircle className="mt-1 h-5 w-5 shrink-0" aria-hidden="true" />
+              WhatsApp for service or prices
             </Link>
             <p className="flex gap-3">
               <MapPin className="mt-1 h-5 w-5 shrink-0" aria-hidden="true" />

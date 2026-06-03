@@ -76,7 +76,7 @@ export function WhatsAppProductButton({ product, className = "" }: { product: Pr
       className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-[#25D366] px-4 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 ${className}`}
     >
       <MessageCircle className="h-4 w-4" aria-hidden="true" />
-      Request Price
+      WhatsApp Price
     </Link>
   );
 }

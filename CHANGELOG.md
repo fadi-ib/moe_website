@@ -1,5 +1,22 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Added Solar to the main navigation, homepage hero CTAs, footer links, and sitemap.
+- Added homepage Our Solutions and Solar Solutions sections.
+- Added `/solar` page for PV wiring, inverter connections, DC protection, and solar accessories.
+- Added solar service data, lead-service options, FAQs, metadata, and structured service types.
+- Added a product quote explanation section on `/products`.
+
+### Changed
+
+- Updated the navigation CTA from phone-first to WhatsApp-first.
+- Updated product WhatsApp buttons to use clearer `WhatsApp Price` language.
+- Removed customer-facing implementation wording from quote request copy.
+- Updated README documentation for solar services and solar SEO visibility.
+
 ## v1.1.0 - Electrical Product Catalog & Quote Basket
 
 ### Added

@@ -9,7 +9,7 @@ import { services } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Electrical Services",
   description:
-    "Electrician in Lebanon for emergency electrician service, residential electrical services, commercial electrical services, generator installation, panel upgrades, lighting installation, wiring, rewiring, and smart home electrical systems."
+    "Electrician in Lebanon for emergency electrician service, residential electrical services, commercial electrical services, solar electrical support, generator installation, panel upgrades, lighting installation, wiring, rewiring, and smart home electrical systems."
 };
 
 export default function ServicesPage() {
