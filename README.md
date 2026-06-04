@@ -17,6 +17,7 @@ The product catalog is not a full ecommerce checkout. Phase 1 is intentionally q
 - `/`: homepage with service and product CTAs, services preview, featured products, product categories, quote form, reviews, gallery preview, contact CTAs, FAQs, and trust/process content.
 - `/services`: electrical service overview.
 - `/solar`: solar electrical support overview with PV wiring, inverter, DC protection, and solar accessory CTAs.
+- `/solar-calculator`: MOE VOLT solar and battery sizing calculator with sanitized customer inputs, inverter, battery, and PV panel estimates.
 - `/products`: searchable and filterable electrical products catalog.
 - `/products/[slug]`: product detail pages with image, brand, category, specs, stock status, WhatsApp quote button, and related products.
 - `/products/category/[slug]`: product category pages for circuit breakers, cables and wires, switches and sockets, LED lighting, electrical panels, contactors and relays, solar accessories, and tools and accessories.
@@ -58,6 +59,16 @@ The quote basket is implemented in `components/products/QuoteBasket.tsx`.
 - The basket builds a WhatsApp message with product names, brands, quantities, and notes.
 - No payment gateway or checkout is connected in Phase 1.
 
+## Solar Calculator
+
+The solar calculator is implemented in `app/solar-calculator/SolarCalculatorClient.tsx`.
+
+- Customer name accepts letters and spaces only.
+- Phone number accepts digits only.
+- Load, hours, voltage, panel, battery, peak-sun, and safety-margin fields accept positive decimal numbers only.
+- Calculations remain blocked until all required numeric inputs are valid and greater than 0.
+- The Request Quotation CTA passes the calculator summary to `/quote`.
+
 ## Admin
 
 The admin panel uses browser localStorage for demo/local management, matching the existing quote request style.
@@ -92,6 +103,9 @@ Product SEO targets terms including:
 - LED lighting Lebanon
 - solar electrician Lebanon
 - solar accessories Lebanon
+- Solar Calculator Lebanon
+- Battery Sizing Calculator
+- MOE VOLT
 
 ## Documentation
 

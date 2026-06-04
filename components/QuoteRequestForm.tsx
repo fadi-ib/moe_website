@@ -1,7 +1,7 @@
 "use client";
 
 import type { ChangeEvent, DragEvent, FormEvent } from "react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CheckCircle2, ImagePlus, Send, XCircle } from "lucide-react";
 import { leadServices } from "@/lib/site";
 import type { QuoteRequest } from "@/lib/adminData";
@@ -31,6 +31,20 @@ export function QuoteRequestForm() {
   const [photos, setPhotos] = useState<File[]>([]);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const service = params.get("service");
+    const message = params.get("message");
+
+    if (!service && !message) return;
+
+    setForm((current) => ({
+      ...current,
+      service: service || current.service,
+      message: message || current.message
+    }));
+  }, []);
 
   const canSubmit = useMemo(
     () => form.fullName.trim() && form.phone.trim() && form.area.trim() && form.service && form.emergency && form.message.trim(),

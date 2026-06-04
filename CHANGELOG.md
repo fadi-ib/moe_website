@@ -7,6 +7,7 @@
 - Added Solar to the main navigation, homepage hero CTAs, footer links, and sitemap.
 - Added homepage Our Solutions and Solar Solutions sections.
 - Added `/solar` page for PV wiring, inverter connections, DC protection, and solar accessories.
+- Added `/solar-calculator` with client-side solar, inverter, battery, and PV sizing calculations plus quotation handoff.
 - Added solar service data, lead-service options, FAQs, metadata, and structured service types.
 - Added a product quote explanation section on `/products`.
 
@@ -16,6 +17,8 @@
 - Updated product WhatsApp buttons to use clearer `WhatsApp Price` language.
 - Removed customer-facing implementation wording from quote request copy.
 - Updated README documentation for solar services and solar SEO visibility.
+- Updated quote requests to accept calculator summaries from URL parameters.
+- Updated `/solar-calculator` input handling to sanitize name, phone, and decimal numeric fields while blocking calculations until required values are valid and greater than 0.
 
 ## v1.1.0 - Electrical Product Catalog & Quote Basket
 

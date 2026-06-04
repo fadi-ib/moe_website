@@ -47,6 +47,7 @@ export const site = {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "Solar", href: "/solar" },
+    { label: "Solar Calculator", href: "/solar-calculator" },
     { label: "Products", href: "/products" },
     { label: "About Us", href: "/about" },
     { label: "Gallery", href: "/gallery" },
